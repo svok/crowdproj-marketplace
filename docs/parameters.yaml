@@ -1,0 +1,13 @@
+parameters:
+  api.sync_timeout_ms:
+    description: "Целевой таймаут для sync-операций (внутренняя обработка в сервисе)"
+    type: integer
+  parties.user.async_command_timeout_minutes:
+    description: "Таймаут выполнения async-команд для user в сервисе parties (например, DeactivateUserCacheFromIdS)"
+    type: integer
+  ledger.hlc_max_drift_ms:
+    description: "Максимально допустимый дрейф HLC относительно wall clock. При превышении — ClockDriftError"
+    type: integer
+  ledger.tombstone_retention_days:
+    description: "Срок хранения tombstone-записей в Append-Only Ledger перед compaction. 30 дней для single-DC, 90 дней для cross-DC"
+    type: integer
