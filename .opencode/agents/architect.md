@@ -1,0 +1,1 @@
+/sda/sokatov/own/cleanai/plugins/crowdproj-originai/ontology/agents-team/architect.md
